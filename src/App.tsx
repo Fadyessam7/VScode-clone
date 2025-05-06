@@ -1,11 +1,10 @@
-import RenderFileIcon from "./components/RenderFileIcon";
+import RecursiveComponent from "./components/RecursiveComponent";
+import { fileTree } from "./data";
 import "./index.css";
 const App = () => {
   return (
-    <div>
-      <RenderFileIcon fileName={"index.tsx"} />
-      <RenderFileIcon fileName={"index.html"} />
-      <RenderFileIcon fileName={"index.css"} />
+    <div className="my-3">
+      <RecursiveComponent fileTree={fileTree} />
     </div>
   );
 };
