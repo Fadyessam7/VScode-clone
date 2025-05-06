@@ -34,5 +34,35 @@ export const fileTree: IFile = {
         },
       ],
     },
+    {
+      name: "src",
+      isFolder: true,
+      children: [
+        {
+          name: "components",
+          isFolder: true,
+          children: [
+            {
+              name: "Button.tsx",
+              isFolder: false,
+            },
+            {
+              name: "Alert.tsx",
+              isFolder: false,
+            },
+          ],
+        },
+        {
+          name: "data",
+          isFolder: true,
+          children: [
+            {
+              name: "index.ts",
+              isFolder: false,
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
