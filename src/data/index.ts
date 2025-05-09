@@ -56,12 +56,42 @@ export const fileTree: IFile = {
               id: uuid(),
               name: "Button.tsx",
               isFolder: false,
-              content: "Button Component Showed",
+              content: `import React from "react";
+
+const Button = () => {
+  return (
+    <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+      Click Me
+    </button>
+  );
+};
+
+export default Button;
+`,
             },
             {
               id: uuid(),
               name: "Alert.tsx",
               isFolder: false,
+              content:`import React from 'react';
+
+const Alert = () => {
+  return (
+    <div style={{
+      backgroundColor: '#f8d7da',
+      color: '#721c24',
+      border: '1px solid #f5c6cb',
+      padding: '15px',
+      borderRadius: '5px',
+      marginBottom: '20px',
+    }}>
+      <strong>Alert!</strong> This is a static alert message.
+    </div>
+  );
+};
+
+export default Alert;
+`
             },
           ],
         },
