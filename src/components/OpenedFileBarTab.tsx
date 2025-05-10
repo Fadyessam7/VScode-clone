@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from "react-redux";
 import type { IFile } from "../interfaces";
 import RenderFileIcon from "./RenderFileIcon";
 import CloseIcon from "./SVG/CloseIcon";
+import { useDispatch, useSelector } from "react-redux";
 import {
   setClickedFilesAction,
   setOpenedFilesAction,
